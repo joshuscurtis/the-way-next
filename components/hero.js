@@ -1,6 +1,9 @@
 import styles from '../styles/Home.module.css'
 import Button from "@material-ui/core/Button";
 import Carousel from "nuka-carousel";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+
 
 export default function Hero() {
     return (
@@ -26,12 +29,8 @@ export default function Hero() {
     >
       Our Menu
   </Button>
-    <Button size="large" variant="contained">
-      Our Events
-  </Button>
-    <Button size="large" variant="contained">
-      About Us
-  </Button>
+  <AnchorLink className={styles.Menu__Button} href='#events'>OUR EVENTS</AnchorLink>
+  <AnchorLink className={styles.Menu__Button} href='#about'>ABOUT US</AnchorLink>
   </div>
 </div>
 </div>)}

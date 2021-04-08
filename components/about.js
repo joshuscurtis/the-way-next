@@ -86,7 +86,8 @@ export default function Pane() {
 
           <div className={styles.About__row2}>
           <ScrollAnimation animateOnce={true} animateIn="fadeIn">
-            <Insta title="" />
+           {/* <Insta title="" />*/} 
+
           </ScrollAnimation>
         </div>
    

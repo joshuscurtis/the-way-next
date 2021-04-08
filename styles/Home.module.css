@@ -43,14 +43,22 @@
   flex-flow: center;
   display: flex;
   justify-content: space-evenly;
-}
 
+}
+.Menu__Button {
+  background-color: #e0e0e0;
+  text-align: center;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+}
 .Main__Buttons>button,
 .Main__Buttons>a {
   color: #00204e;
   border-color: #00204e;
   border: 5px solid #00204e;
-
   margin: 10px;
   padding: 10px;
   font-weight: 850;

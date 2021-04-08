@@ -5,9 +5,7 @@
     max-width: 900px;
     display: flex;
     flex-flow: column;
-    color: #000000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: black;
     border-color: #00204e;
     border: 3px solid #00204e;
     text-align: center;
@@ -94,6 +92,11 @@
     justify-content: center;
     height: 100%;
   }
+
+.times {
+  margin: 5px;
+}
+
   @media only screen and (max-width: 600px) {
     .Box__Container {
       width: 75vw;

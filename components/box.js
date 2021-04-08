@@ -104,7 +104,7 @@ export function News(props) {
     return (
       <div className={styles.Box__Container}>
         <div className={styles.News}>
-          <Typography className="Box__Title" variant="h5" component="h5">
+          <Typography className={styles.Box__Title} variant="h5" component="h5">
             {props.title}
           </Typography>
           {updateData}
@@ -170,36 +170,28 @@ export function OpeningTimes(props) {
         <Typography className={styles.Box__Title} variant="h5" component="h5">
           {props.title}
         </Typography>
-        <p>
+        <p className={styles.times}>
           <b>Monday:</b> {props.mon}
-          <br></br>
         </p>
-        <p>
+        <p className={styles.times}>
           <b>Tuesday</b>: {props.tue}
-          <br></br>
         </p>
-        <p>
+        <p className={styles.times}>
           <b>Wednesday</b>: {props.wed}
-          <br></br>
         </p>
-        <p>
+        <p className={styles.times}>
           <b>Thursday</b>: {props.thu}
-          <br></br>
         </p>
-        <p>
+        <p className={styles.times}>
           <b>Friday</b>: {props.fri}
-          <br></br>
         </p>
-        <p>
+        <p className={styles.times}>
           <b>Saturday</b>: {props.sat}
-          <br></br>
         </p>
-        <p>
+        <p className={styles.times}>
           <b>Sunday</b>: {props.sun}
-          <br></br>
         </p>
       </div>
-      <CardActions></CardActions>
     </div>
   );
 }

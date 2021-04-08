@@ -23,3 +23,158 @@ a {
 .slider-control-centerright {
   visibility: hidden;
 }
+
+.menu {
+  background-color: #00204e;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+}
+
+.App__Title {
+  font-size: 2.2em;
+}
+
+.menuimage {
+  width: 100vw;
+}
+
+.Menu__Title {
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-family: "Sacramento", cursive;
+  font-size: 1.8em;
+  margin-top: 25px;
+}
+
+.Product__Title {
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+}
+
+.MuiTypography-colorTextSecondary {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+.Product__Title>div>span {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 1.8px;
+}
+
+.Product__Image {
+  height: 280px;
+  border-radius: 50%;
+  width: 280px;
+  display: flex;
+  border: 4px solid white;
+}
+
+.img_c {
+  display: flex;
+  justify-content: center;
+}
+
+.Product__Content {
+  height: 5px;
+  display: none;
+}
+
+.back {
+  color: #ffffff;
+  background-color: #00204e;
+  margin-top: 5px;
+}
+
+.Product__Allegens {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-block-start: auto;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  font-size: 0.7em;
+  height: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.Menu__Items {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+.Product__container {
+  min-width: 300px;
+  width: calc(100% - 25px);
+  flex-flow: column;
+}
+
+.Menu__Container {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+}
+
+.Menu__Button {
+  color: #00204e;
+  border-color: #00204e;
+  border: 5px solid #00204e;
+  margin: 10px;
+  padding: 10px;
+  font-weight: 850;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3),
+    0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  background-color: #e0e0e0;
+  text-align: center;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+}
+
+.Menu__Button:hover,
+.Menu__Button:hover {
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5),
+    0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  background-color: #00204e;
+  color: white;
+}
+
+.Drawer__info {
+  margin-top: 90vh;
+}
+
+.Product__container {
+  max-width: 400px;
+}
+
+@media only screen and (min-width: 600px) {
+  .Product__container {
+    width: 50%;
+    flex-flow: column;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .Product__container {
+    width: 33%;
+    flex-flow: column;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .Product__container {
+    width: 25%;
+    flex-flow: column;
+  }
+}
