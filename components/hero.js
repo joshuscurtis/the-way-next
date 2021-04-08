@@ -14,7 +14,7 @@ export default function Hero() {
 <div className={styles.Panel__Box}>
   <img
     alt="The Way Logo"
-    src="min/logo-min.jpg"
+    src="min/logo.webp"
     className={styles.logo}
   ></img>
   <div className={styles.Main__Buttons}>

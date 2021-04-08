@@ -92,7 +92,7 @@
 }
 
 .Panel__Box {
-  animation: fadein 2s;
+  animation: fadein 0.2s;
 }
 
 @keyframes fadein {
