@@ -1,6 +1,6 @@
 import React from "react";
 
-import Form from "./Form";
+import Form from "../components/form";
 
 import styles from "../styles/Footer.module.css";
 import { SocialIcon } from "react-social-icons";
