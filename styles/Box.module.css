@@ -1,0 +1,132 @@
+.Box__Container {
+    margin: 10px;
+    width: 40vw;
+    height: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-flow: column;
+    color: #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    border-color: #00204e;
+    border: 3px solid #00204e;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+    justify-content: space-between;
+    padding: 0px;
+  }
+  
+  .Box__Title {
+    margin-bottom: 10px;
+    color: #00204e;
+    font-weight: 550;
+    margin-top: 5%;
+  }
+  
+  .OpeningTimes {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+  }
+  
+  .News {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .News .Box__Title {
+    width: 100%;
+    padding: 10px;
+  }
+  .News .content {
+    width: 100%;
+  }
+  .Insta__Container {
+    margin: 5px;
+    width: 100vw;
+    display: flex;
+    color: #000000;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Insta__Box__Title {
+    margin-bottom: 10px;
+    color: #00204e;
+    font-weight: 550;
+  }
+  
+  .Insta {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Insta > a > img {
+    width: 26.5vw;
+    height: 26.5vw;
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 1vh;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.2s;
+  }
+  
+  .Insta > a > img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.045);
+  }
+  
+  .social {
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    .Box__Container {
+      width: 75vw;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .Insta > a > img {
+      width: 30vw;
+      height: 30vw;
+    }
+    .Insta {
+      width: 90vw;
+    }
+  }
+  
+  .Box__Socials {
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .Box__Socials > a {
+    border-radius: 20000px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .Box__Socials > a:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  

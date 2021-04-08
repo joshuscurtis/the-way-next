@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.slider-control-centerleft {
+  visibility: hidden;
+}
+
+.slider-control-centerright {
+  visibility: hidden;
+}
