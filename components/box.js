@@ -137,8 +137,8 @@ export function BoxWithFetch(props) {
   }, [updateData, props.url]);
   if (updateData === "loading") {
     return (
-      <div className="Box__Container">
-        <div className="News">
+      <div className={styles.Box__Container}>
+        <div className={styles.News}>
           <Typography className="Box__Title" variant="h5" component="h5">
             {props.title}
           </Typography>
@@ -151,7 +151,7 @@ export function BoxWithFetch(props) {
   }
   if (updateData !== "loading") {
     return (
-      <div className="Box__Container">
+      <div className={styles.Box__Container}>
         <CardContent>
           <Typography variant="body2" component="p">
             {updateData}
