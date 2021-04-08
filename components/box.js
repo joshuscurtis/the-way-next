@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-
 import Feed from "react-instagram-authless-feed";
 import { SocialIcon } from "react-social-icons";
 import axios from "axios";
