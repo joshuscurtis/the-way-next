@@ -14,7 +14,7 @@ export default function Hero() {
 <div className={styles.Panel__Box}>
   <img
     alt="The Way Logo"
-    src="https://www.christchurchdunstable.org.uk/theway/images/min/logo-min.jpg"
+    src="min/logo-min.jpg"
     className={styles.logo}
   ></img>
   <div className={styles.Main__Buttons}>

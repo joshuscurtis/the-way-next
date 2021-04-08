@@ -3,7 +3,7 @@
 }
 
 .bg_1 {
-  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/snow-outside-min.jpg");
+  background-image: url("/min/snow-outside-min.jpg");
   height: 100vh;
   width: 100vw;
   background-position: center;
@@ -12,7 +12,7 @@
 }
 
 .bg_2 {
-  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/coffeemachine-min.webp");
+  background-image: url("/min/coffeemachine-min.webp");
   height: 100vh;
   width: 100%;
   background-position: center;
@@ -20,7 +20,7 @@
 }
 
 .bg_3 {
-  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/cake-min.webp");
+  background-image: url("/min/cake-min.webp");
   height: 100vh;
   width: 100%;
   background-position: center;
@@ -28,7 +28,7 @@
 }
 
 .bg_4 {
-  background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/coffee-min.webp");
+  background-image: url("/min/coffee-min.webp");
   height: 100vh;
   width: 100%;
   background-position: left;
@@ -120,14 +120,14 @@
 
 @media only screen and (max-width: 500px) {
   .bg_1 {
-    background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/snow-outside-min-mob.jpg");
+    background-image: url("/min/snow-outside-min-mob.jpg");
     height: 100vh;
     background-size: 150%;
     background-position: 50%;
   }
 
   .bg_2 {
-    background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/coffeemachine-min.jpg");
+    background-image: url("/min/coffeemachine-min.jpg");
     height: 100vh;
     width: 100%;
     background-position: 50%;
@@ -135,7 +135,7 @@
   }
 
   .bg_3 {
-    background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/cake-min.jpg");
+    background-image: url("/min/cake-min.jpg");
     height: 100vh;
     width: 100%;
     background-position: 30%;
@@ -143,7 +143,7 @@
   }
 
   .bg_4 {
-    background-image: url("https://www.christchurchdunstable.org.uk/theway/images/min/coffee-min.jpg");
+    background-image: url("/min/coffee-min.jpg");
     height: 100vh;
     width: 100vw;
     background-position: center;
