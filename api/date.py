@@ -13,7 +13,7 @@ class handler(BaseHTTPRequestHandler):
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
     self.end_headers()
-    self.wfile.write(str(account.get_profile_picture_url()).encode())
+    self.wfile.write(str("Hey").encode())
     return
 
 
