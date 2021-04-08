@@ -1,11 +1,13 @@
 import React from "react";
 
+
 import styles from "../styles/About.module.css";
 //import "animate.js";
 import { OpeningTimes, News, Insta } from "./box";
 import Typewriter from "typewriter-effect";
 
 import ScrollAnimation from 'react-animate-on-scroll';
+
 
 export default function Pane() {
   const news = "Opening soon for takeaway drinks and cakes... ";

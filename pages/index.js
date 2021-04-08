@@ -4,6 +4,7 @@ import About from "../components/about";
 import Events from "../components/events";
 import FloatingActionButton from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/ArrowUpward";
+import Footer from "../components/footer"
 
 export default function Home() {
   const style = {
@@ -37,6 +38,7 @@ export default function Home() {
       <Hero />
       <About />
       <Events />
+      <Footer/>
     </div>
   );
 }
