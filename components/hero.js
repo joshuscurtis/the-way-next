@@ -16,6 +16,7 @@ export default function Hero() {
       objectFit="cover" 
       layout='fill'
       priority={true}
+      quality={50}
       > 
       </Image>
   </div>
@@ -25,6 +26,8 @@ export default function Hero() {
       objectFit="cover" 
       layout='fill'
       priority={true}
+      quality={25}
+
       > 
       </Image>
   </div>
@@ -34,6 +37,8 @@ export default function Hero() {
       objectFit="cover" 
       layout='fill'
       priority={true}
+      quality={25}
+
       > 
       </Image>
   </div>
