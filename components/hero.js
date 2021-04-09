@@ -44,11 +44,15 @@ export default function Hero() {
   </div>
 </Carousel>
 <div className={styles.Panel__Box}>
-  <img
+  <Image
     alt="The Way Logo"
-    src="min/logo.webp"
+    src="/min/logo.webp"
     className={styles.logo}
-  ></img>
+    width={220}
+    height={275}
+    priority={true}
+    quality={25}
+  ></Image>
   <div className={styles.Main__Buttons}>
     <Button
       size="large"
