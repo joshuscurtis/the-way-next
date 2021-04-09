@@ -15,6 +15,7 @@ export default function Hero() {
       src="/min/coffeemachine-min.webp"
       objectFit="cover" 
       layout='fill'
+      priority={true}
       > 
       </Image>
   </div>
@@ -23,6 +24,7 @@ export default function Hero() {
       src="/min/cake-min.webp"
       objectFit="cover" 
       layout='fill'
+      priority={true}
       > 
       </Image>
   </div>
@@ -31,6 +33,7 @@ export default function Hero() {
       src="/min/coffee-min.webp"
       objectFit="cover" 
       layout='fill'
+      priority={true}
       > 
       </Image>
   </div>
