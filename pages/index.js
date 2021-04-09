@@ -6,6 +6,8 @@ import FloatingActionButton from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/ArrowUpward";
 import Footer from "../components/footer"
 
+import Gallery from "../components/gallery"
+
 export default function Home() {
   const style = {
     margin: 0,
@@ -37,6 +39,7 @@ export default function Home() {
       </FloatingActionButton>
       <Hero />
       <About />
+      <Gallery />
       <Events />
       <Footer/>
     </div>
