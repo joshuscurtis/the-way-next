@@ -20,6 +20,7 @@ export default function Panel() {
           <div className={styles.map}>
             <iframe
               title="maps"
+              loading="lazy"
               width="100%"
               height="300px"
               frameborder="0"
