@@ -22,6 +22,7 @@ export default function Home() {
     <div>
       <Head>
         <title>The Way Coffee House | Coffee & Cake in Dunstable</title>
+        <meta name="description" content="Now Open! The Way Coffee House serves coffee which is top quality, award winning, hand roasted and Fairtrade.  In addition to coffee we have quality teas, cold drinks, Zuma hot chocolate to satisfy any chocaholic, scrummy cakes and light refreshments – all at affordable prices"></meta>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
