@@ -51,31 +51,31 @@ export default function Events() {
       </ScrollAnimation>
       <div className={styles.Events__Main}>
         <EventCard
-          img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Book-Club.jpg"
+          img="/events/Ministry-Posters-Book-Club.jpeg"
           title="Book Club"
           text={bookclub}
           time="2nd Wednesday of the month – 7:30pm."
         />
         <EventCard
-          img="https://www.christchurchdunstable.org.uk/theway/images/min//Ministry-Posters-Patchwork-Quilting.webp"
+          img="/events/Ministry-Posters-Patchwork-Quilting.webp"
           title="Patch Work & Quilting"
           text={patchwork}
           time="1 st &amp; 3 rd Monday of the month. 10am-12:30pm"
         />
         <EventCard
-          img="https://www.christchurchdunstable.org.uk/theway/images/min/Ministry-Posters-Art.webp"
+          img="/events/Ministry-Posters-Art.webp"
           title="Art"
           text={art}
           time=" Tuesdays – 10am-12pm – During term time."
         />
         <EventCard
-          img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Ministry-Posters-Knit-Natter.jpg"
+          img="/events/Ministry-Posters-Knit-Natter.jpeg"
           title="Knit & Natter"
           text={knit}
           time="Fridays – 10am-12pm – During term time."
         />
         <EventCard
-          img="https://www.christchurchdunstable.org.uk/wp-content/uploads/Coffee-Shop.jpg"
+          img="/events/Coffee-Shop.jpeg"
           title="Wednesday Evenings"
           text={wed}
           time="Wednesday evenings, til 9pm."
