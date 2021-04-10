@@ -41,7 +41,7 @@
   justify-content: space-evenly;
 
 }
-.Menu__Button {
+.Main__Buttons > a {
   background-color: #e0e0e0;
   text-align: center;
   line-height: 1.75;
