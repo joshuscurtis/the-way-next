@@ -45,14 +45,54 @@ function GalleryMob() {
         >
         </Image>
         <Image
-        src={"/insta/insta"+"_1.webp"}
+        src={"/insta/insta"+"_2.webp"}
         width={115}
         height={115}
         className={gallery.insta}
         >
         </Image> 
             <Image
-        src={"/insta/insta"+"_1.webp"} 
+        src={"/insta/insta"+"_3.webp"} 
+        width={115}
+        height={115}
+        className={gallery.insta}
+        >
+        </Image>      <Image
+        src={"/insta/insta"+"_4.webp"}
+        width={115}
+        height={115}
+        className={gallery.insta}
+        >
+        </Image>
+        <Image
+        src={"/insta/insta"+"_5.webp"}
+        width={115}
+        height={115}
+        className={gallery.insta}
+        >
+        </Image> 
+            <Image
+        src={"/insta/insta"+"_6.webp"} 
+        width={115}
+        height={115}
+        className={gallery.insta}
+        >
+        </Image>      <Image
+        src={"/insta/insta"+"_7.webp"}
+        width={115}
+        height={115}
+        className={gallery.insta}
+        >
+        </Image>
+        <Image
+        src={"/insta/insta"+"_8.webp"}
+        width={115}
+        height={115}
+        className={gallery.insta}
+        >
+        </Image> 
+            <Image
+        src={"/insta/insta"+"_9.webp"} 
         width={115}
         height={115}
         className={gallery.insta}

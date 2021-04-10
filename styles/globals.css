@@ -181,3 +181,15 @@ a {
   }
 }
 
+.Drawer {
+  width: 200px;
+}
+
+.Menu__Button {
+}
+
+.Nav_cont{
+  display: flex;
+  justify-content: space-between;
+
+}

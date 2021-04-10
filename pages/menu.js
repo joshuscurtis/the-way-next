@@ -31,7 +31,7 @@ import axios from "axios";
 
 //const menu = require("./menu.json");
 
-const drawerWidth = 240;
+const drawerWidth = 330;
 const useStyles = makeStyles((theme) => ({
 }));
 
@@ -142,8 +142,9 @@ export default function PersistentDrawerLeft() {
           variant="persistent"
           anchor="left"
           open={open}
+          className="Drawer"
         >
-          <div className={classes.drawerHeader}>
+          <div className={"Drawer"}>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "ltr" ? (
                 <ChevronLeftIcon />
