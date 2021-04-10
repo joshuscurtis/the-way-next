@@ -16,7 +16,7 @@ export default function Hero() {
       objectFit="cover" 
       layout='fill'
       priority={true}
-      quality={50}
+      quality={1}
       > 
       </Image>
   </div>
@@ -49,7 +49,7 @@ export default function Hero() {
     width={220}
     height={275}
     priority={true}
-    quality={25}
+    quality={1}
   ></Image>
   <div className={styles.Main__Buttons}>
     <Button
