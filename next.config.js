@@ -1,6 +1,6 @@
 module.exports = {
     images: {
-      domains: ['www.christchurchdunstable.org.uk']
+      domains: ['christchurchdunstable.org.uk']
     },
   }
 
