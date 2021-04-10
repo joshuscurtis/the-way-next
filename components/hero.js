@@ -8,7 +8,7 @@ import Image from 'next/image'
 export default function Hero() {
     return (
 <div className={styles.Panel__Main}>
-<Carousel autoplay={true} autoplayInterval={5000} wrapAround={true}>
+<Carousel autoplay={true} autoplayInterval={7000} wrapAround={true}>
   {/*<div className="bg_1"></div>*/}
   <div className={styles.bg_2}>
       <Image
@@ -25,7 +25,6 @@ export default function Hero() {
       src="/min/cake-min.webp"
       objectFit="cover" 
       layout='fill'
-      priority={true}
       quality={25}
 
       > 
@@ -36,7 +35,6 @@ export default function Hero() {
       src="/min/coffee-min.webp"
       objectFit="cover" 
       layout='fill'
-      priority={true}
       quality={25}
 
       > 
