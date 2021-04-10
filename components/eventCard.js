@@ -8,7 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.js";
+import Image from 'next/image'
 
 export default function EventCard(props) {
   var img =
@@ -20,7 +20,10 @@ export default function EventCard(props) {
     <ScrollAnimation className={styles.Card_an} animateOnce={true} animateIn="fadeIn">
       <Card className={styles.Card}>
         <CardActionArea>
-          <CardMedia className={styles.Card__Image} image={img} title={props.title} />
+          <CardMedia className={styles.Card__Image} image={''} title={props.title}>
+          <Image src={img}  height={200}    width={520}   objectFit="cover"  />
+
+            </CardMedia>
           <CardContent className={styles.Card__Content}>
             <Typography gutterBottom variant="h5" component="h2">
               {props.title}

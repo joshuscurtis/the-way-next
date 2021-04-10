@@ -1,9 +1,12 @@
 import Image from 'next/image'
 import gallery from '../styles/Gallery.module.css'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export default function Hero() {
     return (
     <div className={gallery.instagram}>
+            <ScrollAnimation animateOnce={true} animateIn="fadeIn">
+
     <div className={gallery.container}>
         <Image
         src={"/insta/insta"+"_1.webp"}
@@ -53,5 +56,7 @@ export default function Hero() {
         className={gallery.insta}>
         </Image>
     </div>
+    </ScrollAnimation>
+
     </div>
     )}
