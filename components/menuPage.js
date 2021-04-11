@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Menu.module.css";
-
+import Image from "next/image"
 //import Card from "@material-ui/core/Card";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
@@ -15,22 +15,30 @@ export default function ItemBuilder(props) {
     if (type === "drinks") {
       return (
         <div className="Menu__Container">
-          <img
+          <Image
             className="menuimage"
             alt=""
-            src="https://www.christchurchdunstable.org.uk/theway/images/min/drinks-min.jpg"
-          ></img>
-        </div>
+            height={3508}
+            width={2481}
+            layout="intrinsic"
+            src="/menu/drinks.webp"
+            priority={true}
+            ></Image>
+            </div>
       );
     }
     if (type === "food") {
       return (
         <div className="Menu__Container">
-          <img
+          <Image
             className="menuimage"
             alt=""
-            src="https://www.christchurchdunstable.org.uk/theway/images/min/food-min.jpg"
-          ></img>
+            height={3508}
+            width={2481}
+            src="/menu/food.webp"
+            layout="intrinsic"
+            priority={true}
+          ></Image>
         </div>
       );
     }
