@@ -20,7 +20,7 @@ class handler(BaseHTTPRequestHandler):
 
         self.send_response(200)
         self.send_header('Content-type', 'application/json')
-        self.send_header('Cache-Control', 's-maxage=86400')
+        self.send_header('Cache-Control', 's-maxage=360')
         self.end_headers()
         self.wfile.write(str(r.json()[0]['content']['rendered']+a.json()[0]['content']['rendered']+b.json()[
                          0]['content']['rendered']+c.json()[0]['content']['rendered']+d.json()[0]['content']['rendered']).encode())
