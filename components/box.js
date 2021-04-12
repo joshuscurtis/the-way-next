@@ -72,7 +72,7 @@ export function News(props) {
 
       return request2;
     }
-    fetchData();
+    //fetchData();
   }, [updateData, props.url]);
   if (updateData === "loading") {
     return (
