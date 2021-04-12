@@ -65,14 +65,15 @@ export function News(props) {
   const [updateData, setUpdateData] = useState("loading");
 
   useEffect(() => {
+    console.log("useEffect")
     async function fetchData() {
       const request2 = await axios.get(props.url);
       setUpdateData(request2.data.news.replace(/<[^>]*>?/gm, ""));
-      console.log(updateData);
+      console.log("updateData");
 
       return request2;
     }
-    //fetchData();
+    fetchData();
   }, [updateData, props.url]);
   if (updateData === "loading") {
     return (
