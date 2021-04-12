@@ -22,7 +22,7 @@ class handler(BaseHTTPRequestHandler):
         x = {
             "alert" : r.json()[0]['content']['rendered'],
             "info" : a.json()[0]['content']['rendered'],
-            "news" : c.son()[0]['content']['rendered']
+            "news" : c.json()[0]['content']['rendered']
 
         }
 
