@@ -8,11 +8,11 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self):
 
         r = requests.get(
-            'https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8913')
+            'https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=7912')
         a = requests.get(
             'https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8913')
         b = requests.get(
-            'https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8913')
+            'https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8910')
         c = requests.get(
             'https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8913')
         d = requests.get(
