@@ -42,10 +42,10 @@ export default function Events() {
             <div className={styles.title__right}> </div>
           </div>
           <div className={styles.Events__intro__alert}>
-            <BoxWithFetch url="https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8913" />
+            <BoxWithFetch url="/api/wp" type="alert" />
           </div>
           <div className={styles.Events__intro}>
-            <BoxWithFetch url="https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8910" />
+            <BoxWithFetch url="/api/wp" type="info" />
           </div>
         </div>
       </ScrollAnimation>
