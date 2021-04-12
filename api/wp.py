@@ -1,6 +1,7 @@
 from http.server import BaseHTTPRequestHandler
 from datetime import datetime
 import requests
+import json
 
 
 class handler(BaseHTTPRequestHandler):
@@ -18,10 +19,17 @@ class handler(BaseHTTPRequestHandler):
         d = requests.get(
             'https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8913')
 
+        x = {
+            "alert" : r.json()[0]['content']['rendered'],
+            "info" : a.json()[0]['content']['rendered'],
+            "news" : c.son()[0]['content']['rendered']
+
+        }
+
+
         self.send_response(200)
         self.send_header('Content-type', 'application/json')
         self.send_header('Cache-Control', 'Cache-Control: s-maxage=5, stale-while-revalidate=2629743')
         self.end_headers()
-        self.wfile.write(str(r.json()[0]['content']['rendered']+a.json()[0]['content']['rendered']+b.json()[
-                         0]['content']['rendered']+c.json()[0]['content']['rendered']+d.json()[0]['content']['rendered']).encode())
+        self.wfile.write(str(x).encode())
         return
