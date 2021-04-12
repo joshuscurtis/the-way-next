@@ -20,9 +20,9 @@ class handler(BaseHTTPRequestHandler):
             'https://christchurchdunstable.org.uk/wp-json/wp/v2/posts?include[]=470&include[]=8913')
 
         x = {
-            "alert" : r.json()[0]['content']['rendered'],
-            "info" : a.json()[0]['content']['rendered'],
-            "news" : c.json()[0]['content']['rendered']
+            "news" : r.json()[0]['content']['rendered'],
+            "alert" : a.json()[0]['content']['rendered'],
+            "info" : b.json()[0]['content']['rendered']
 
         }
 
