@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Events.module.css"
 import EventCard from "../components/eventCard";
-import { BoxWithFetch } from "../components/box";
+import { InfoBox, AlertBox } from "../components/box";
 //const eventData = require('./data/events.json');
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.js";
@@ -38,14 +38,14 @@ export default function Events() {
         <div className={styles.Events__header}>
           <div className={styles.Events__Title__Container} id="events">
             <div className={styles.title__left}> </div>
-            <h1 className={styles.Events__Title}>OUR EVENTS </h1>
+            <h1 className={styles.Events__Title}>OUR EVENTS</h1>
             <div className={styles.title__right}> </div>
           </div>
           <div className={styles.Events__intro__alert}>
-            <BoxWithFetch url="/api/wp" type="alert" />
+            <AlertBox url="/api/wp" type="alert" />
           </div>
           <div className={styles.Events__intro}>
-            <BoxWithFetch url="/api/wp" type="info" />
+            <InfoBox url="/api/wp" type="info" />
           </div>
         </div>
       </ScrollAnimation>

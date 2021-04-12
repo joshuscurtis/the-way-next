@@ -115,21 +115,52 @@ export function News(props) {
     );
   }
 }
-
-export function BoxWithFetch(props) {
+export function AlertBox(props) {
   const [updateData, setUpdateData] = useState("loading");
 
   useEffect(() => {
     async function fetchData() {
-      //const request2 = await axios.get(props.url);
-      console.log(request2.data);
+      const request2 = await axios.get(props.url);
       setUpdateData(request2.data.alert.replace(/<[^>]*>?/gm, ""));
+      return request2;
+    }
+    fetchData();
+  }, [updateData, props.url]);
+  if (updateData === "loading") {
+    return (
+      <div className={styles.Box__Container}>
+        <div className={styles.News}>
+          <Typography className="Box__Title" variant="h5" component="h5">
+            {props.title}
+          </Typography>
+          <Typography className="content" variant="subtitle" component="p">
+            {props.content}
+          </Typography>
+        </div>
+      </div>
+    );
+  }
+  if (updateData !== "loading") {
+    return (
+      <div className={styles.Box__Container}>
+        <CardContent>
+          <Typography variant="body2" component="p">
+            {updateData}
+          </Typography>
+        </CardContent>
+        <CardActions></CardActions>
+      </div>
+    );
+  }
+}
 
-      if (props.type === "info") {
-        setUpdateData(request2.data.info.replace(/<[^>]*>?/gm, ""));
-      }
-      console.log(updateData);
+export function InfoBox(props) {
+  const [updateData, setUpdateData] = useState("loading");
 
+  useEffect(() => {
+    async function fetchData() {
+      const request2 = await axios.get(props.url);
+      setUpdateData(request2.data.info.replace(/<[^>]*>?/gm, ""));
       return request2;
     }
     fetchData();
