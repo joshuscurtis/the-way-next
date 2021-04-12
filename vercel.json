@@ -5,6 +5,15 @@
         "headers" : [
           {
             "key" : "Cache-Control",
+            "value" : "max-age=0, s-maxage=86400"
+          }
+        ]
+      },
+      {
+        "source": "/api/(.*)",
+        "headers" : [
+          {
+            "key" : "Cache-Control",
             "value" : "s-maxage=5, stale-while-revalidate=2629743"
           }
         ]
