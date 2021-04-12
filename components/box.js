@@ -121,7 +121,7 @@ export function BoxWithFetch(props) {
 
   useEffect(() => {
     async function fetchData() {
-      const request2 = await axios.get(props.url);
+      //const request2 = await axios.get(props.url);
       console.log(request2.data);
       setUpdateData(request2.data.alert.replace(/<[^>]*>?/gm, ""));
 
