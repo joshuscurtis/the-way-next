@@ -67,9 +67,8 @@ export function News(props) {
   useEffect(() => {
     async function fetchData() {
       const request2 = await axios.get(props.url);
-      console.log(request2.data[0].content);
       setUpdateData(
-        request2.data[0].content.rendered.replace(/<[^>]*>?/gm, "")
+        request2.news.replace(/<[^>]*>?/gm, "")
       );
       console.log(updateData);
 
