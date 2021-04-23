@@ -1,21 +1,23 @@
 {
-    "headers": [
-      {
-        "source": "/",
-        "headers" : [
-          {
-            "key" : "Cache-Control",
-            "value" : "max-age=0, s-maxage=86400"
-          }
-        ]
-      },
-      {
-        "source": "/api/(.*)",
-        "headers" : [
-          {
-            "key" : "Cache-Control",
-            "value" : "s-maxage=5, stale-while-revalidate=2629743"
-          }
-        ]
+  "headers": [{
+      "source": "/",
+      "headers": [{
+        "key": "Cache-Control",
+        "value": "max-age=0, s-maxage=86400"
       }]
+    }, {
+      "source": "/_next/*",
+      "headers": [{
+        "key": "Cache-Control",
+        "value": "max-age=0, s-maxage=86400"
+      }]
+    },
+    {
+      "source": "/api/wp",
+      "headers": [{
+        "key": "Cache-Control",
+        "value": "max-age=0, s-maxage=86400"
+      }]
+    }
+  ]
 }
