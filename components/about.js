@@ -68,7 +68,7 @@ export default function Pane() {
               title="Opening Times"
               mon="8:30am - 3:00pm"
               tue="8:30am - 3:00pm"
-              wed="8:30am - 3:00pm"
+              wed="8:30am - 9:00pm"
               thu="8:30am - 3:00pm"
               fri="8:30am - 3:00pm"
               sat="8:30am - 3:00pm"
