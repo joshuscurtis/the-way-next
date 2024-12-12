@@ -5,25 +5,24 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.3",
-    "@material-ui/icons": "^4.11.2",
-    "animate-js": "^0.3.2",
-    "animate.css": "^4.1.1",
-    "animate.js": "^2.0.2",
-    "axios": "^0.21.1",
-    "next": "10.1.4-canary.2",
-    "nuka-carousel": "^4.7.7",
-    "react": "^17.0.0",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^17.0.2",
-    "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed#v2.0.0",
-    "react-lazyload": "^3.2.0",
-    "react-scroll": "^1.8.2",
-    "react-social-icons": "^5.1.1",
-    "typewriter-effect": "^2.17.0"
+    "next": "15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
