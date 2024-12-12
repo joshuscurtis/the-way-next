@@ -42,6 +42,7 @@ const events = [
     endTime: "21:00",
     location: "The Way Coffee House",
   },
+  
   {
     name: "Quiz Night",
     icon: <FaQuestion className="text-4xl text-[#D4A574]" />,
