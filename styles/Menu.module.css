@@ -1,113 +1,191 @@
+/* ===========================================
+   Menu Page Styles
+   =========================================== */
+
 .menu {
-    background-color: #00204e;
-    font-family: "Raleway", sans-serif;
-    text-transform: capitalize;
-  }
-  
-  .App__Title {
-    font-size: 2.2em;
-  }
-  .menuimage {
-    width: 100vw;
-  }
-  .Menu__Title {
-    text-align: center;
-    text-transform: capitalize;
-    color: white;
-    font-family: "Sacramento", cursive;
-    font-size: 1.8em;
-    margin-top: 25px;
-  }
-  
-  .Product__Title {
-    font-family: "Raleway", sans-serif;
-    text-transform: capitalize;
-    color: white;
-    text-align: center;
-  }
-  .MuiTypography-colorTextSecondary {
-    color: white;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-  }
-  
-  .Product__Title > div > span {
-    color: white;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    letter-spacing: 1.8px;
-  }
-  .Product__Image {
-    height: 280px;
-    border-radius: 50%;
-    width: 280px;
-    display: flex;
-    border: 4px solid white;
-  }
-  .img_c {
-    display: flex;
-    justify-content: center;
-  }
-  .Product__Content {
-    height: 5px;
-    display: none;
-  }
-  .back {
-    color: #ffffff;
-    background-color: #00204e;
-    margin-top: 5px;
-  }
-  .Product__Allegens {
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-block-start: auto;
-    text-align: center;
-    font-style: italic;
-    width: 100%;
-    font-size: 0.7em;
-    height: 15px;
-    font-weight: 300;
-    letter-spacing: 2px;
-  }
-  .Menu__Items {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-evenly;
-  }
+  background-color: var(--color-bg-dark, #3D2B1F);
+  font-family: var(--font-body, 'Raleway', sans-serif);
+  text-transform: capitalize;
+  min-height: 100vh;
+}
+
+.App__Title {
+  font-size: var(--text-2xl, 32px);
+  font-weight: var(--weight-semibold, 600);
+  letter-spacing: -0.02em;
+  color: var(--color-text-inverse, #FDFBF7);
+}
+
+.menuimage {
+  width: 100vw;
+  display: block;
+}
+
+.Menu__Title {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-text-inverse, #FDFBF7);
+  font-family: var(--font-display, 'Sacramento', cursive);
+  font-size: var(--text-3xl, 40px);
+  margin-top: var(--space-6, 24px);
+  margin-bottom: var(--space-4, 16px);
+}
+
+/* Product Card Typography */
+.Product__Title {
+  font-family: var(--font-body, 'Raleway', sans-serif);
+  text-transform: capitalize;
+  color: var(--color-text-inverse, #FDFBF7);
+  text-align: center;
+  font-weight: var(--weight-medium, 500);
+}
+
+.MuiTypography-colorTextSecondary {
+  color: rgba(253, 251, 247, 0.8);
+  font-family: var(--font-body, 'Raleway', sans-serif);
+  text-transform: uppercase;
+  font-size: var(--text-sm, 13px);
+  letter-spacing: 0.05em;
+}
+
+.Product__Title > div > span {
+  color: var(--color-text-inverse, #FDFBF7);
+  font-family: var(--font-body, 'Raleway', sans-serif);
+  text-transform: uppercase;
+  font-size: var(--text-lg, 20px);
+  letter-spacing: 0.08em;
+  font-weight: var(--weight-semibold, 600);
+}
+
+/* Product Image */
+.Product__Image {
+  height: 220px;
+  width: 220px;
+  border-radius: var(--radius-full, 9999px);
+  display: flex;
+  border: 3px solid rgba(253, 251, 247, 0.3);
+  box-shadow: var(--shadow-lg, 0 4px 16px rgba(0, 0, 0, 0.15));
+  transition: all var(--transition-normal, 200ms cubic-bezier(0.25, 1, 0.5, 1));
+  object-fit: cover;
+}
+
+.Product__Image:hover {
+  transform: scale(1.03);
+  border-color: rgba(253, 251, 247, 0.5);
+}
+
+.img_c {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-4, 16px);
+}
+
+.Product__Content {
+  height: 5px;
+  display: none;
+}
+
+.back {
+  color: var(--color-text-inverse, #FDFBF7);
+  background-color: var(--color-bg-dark, #3D2B1F);
+  margin-top: var(--space-2, 8px);
+}
+
+.Product__Allegens {
+  color: rgba(253, 251, 247, 0.6);
+  display: flex;
+  justify-content: center;
+  margin-block-start: auto;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  font-size: var(--text-xs, 11px);
+  font-weight: var(--weight-normal, 400);
+  letter-spacing: 0.08em;
+  padding: var(--space-2, 8px) 0;
+}
+
+/* Menu Grid */
+.Menu__Items {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: var(--space-8, 32px);
+  padding: var(--space-8, 32px) var(--space-4, 16px);
+}
+
+.Product__container {
+  min-width: 260px;
+  max-width: 340px;
+  width: calc(100% - var(--space-4, 16px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-4, 16px);
+  background-color: rgba(253, 251, 247, 0.05);
+  border-radius: var(--radius-lg, 12px);
+  border: 1px solid rgba(253, 251, 247, 0.08);
+  transition: all var(--transition-normal, 200ms cubic-bezier(0.25, 1, 0.5, 1));
+}
+
+.Product__container:hover {
+  background-color: rgba(253, 251, 247, 0.08);
+  border-color: rgba(253, 251, 247, 0.12);
+}
+
+.Menu__Container {
+  margin-top: var(--space-16, 64px);
+  margin-bottom: 0;
+  padding: var(--space-6, 24px) 0 var(--space-12, 48px);
+}
+
+/* Drawer Info */
+.Drawer__info {
+  margin-top: 90vh;
+  color: var(--color-text-muted, #8A847C);
+  font-size: var(--text-sm, 13px);
+}
+
+/* Responsive Grid */
+@media only screen and (min-width: 600px) {
   .Product__container {
-    min-width: 300px;
-    width: calc(100% - 25px);
-    flex-flow: column;
+    width: 45%;
   }
-  .Menu__Container {
-    margin-top: 64px;
-    margin-bottom: 0px;
-  }
-  
-  .Drawer__info {
-    margin-top: 90vh;
-  }
+}
+
+@media only screen and (min-width: 900px) {
   .Product__container {
-    max-width: 400px;
-  }
-  @media only screen and (min-width: 600px) {
-    .Product__container {
-      width: 50%;
-      flex-flow: column;
-    }
-  }
-  @media only screen and (min-width: 900px) {
-    .Product__container {
-      width: 33%;
-      flex-flow: column;
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    .Product__container {
-      width: 25%;
-      flex-flow: column;
-    }
+    width: 30%;
   }
 
+  .Product__Image {
+    height: 240px;
+    width: 240px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .Product__container {
+    width: 22%;
+  }
+}
+
+/* Mobile Adjustments */
+@media only screen and (max-width: 500px) {
+  .Menu__Title {
+    font-size: var(--text-2xl, 32px);
+  }
+
+  .Product__Image {
+    height: 180px;
+    width: 180px;
+  }
+
+  .Menu__Items {
+    gap: var(--space-4, 16px);
+  }
+
+  .Product__container {
+    padding: var(--space-3, 12px);
+  }
+}
