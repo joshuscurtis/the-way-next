@@ -18,8 +18,8 @@
 }
 
 .Card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg, 0 4px 16px rgba(61, 43, 31, 0.12));
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg, 0 4px 16px rgba(61, 43, 31, 0.10));
 }
 
 .Card_an {
@@ -38,7 +38,7 @@
 /* Card Content */
 .Card__Content {
   height: 100%;
-  padding: var(--space-4, 16px) var(--space-5, 20px);
+  padding: var(--space-4, 16px);
   display: flex;
   flex: 1 0 auto;
   align-items: flex-start;
@@ -115,7 +115,7 @@
 
 @media only screen and (min-width: 1200px) {
   .Card {
-    width: calc(33.333% - var(--space-5, 20px));
+    width: calc(33.333% - var(--space-6, 24px));
     max-width: 400px;
     min-height: 400px;
   }

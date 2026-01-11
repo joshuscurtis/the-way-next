@@ -47,11 +47,10 @@
   --space-12: 48px;
   --space-16: 64px;
 
-  /* Border Radius - Soft system */
+  /* Border Radius - Soft system (8px, 12px) */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
-  --radius-xl: 16px;
   --radius-full: 9999px;
 
   /* Typography */
@@ -179,8 +178,8 @@ a:hover {
   border-radius: var(--radius-full);
   width: 240px;
   display: flex;
-  border: 3px solid var(--color-bg-secondary);
-  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
   transition: transform var(--transition-normal);
 }
 
@@ -243,11 +242,11 @@ a:hover {
 .Menu__Button {
   color: var(--color-primary);
   background-color: var(--color-bg-secondary);
-  border: 2px solid var(--color-primary);
+  border: 1px solid var(--color-border-strong);
   margin: var(--space-2);
-  padding: var(--space-3) var(--space-5);
+  padding: var(--space-3) var(--space-6);
   font-weight: var(--weight-semibold);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
   text-align: center;
   line-height: 1.5;
   border-radius: var(--radius-md);

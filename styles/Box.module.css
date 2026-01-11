@@ -29,7 +29,7 @@
   margin-bottom: var(--space-3, 12px);
   color: var(--color-primary, #3D2B1F);
   font-weight: var(--weight-semibold, 600);
-  margin-top: var(--space-5, 20px);
+  margin-top: var(--space-4, 16px);
   font-size: var(--text-md, 17px);
   letter-spacing: -0.01em;
 }
