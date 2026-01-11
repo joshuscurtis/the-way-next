@@ -1,75 +1,104 @@
+/* ===========================================
+   Hero Section Styles
+   =========================================== */
+
 .logo {
-  width: 220px;
+  width: 200px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+  transition: transform var(--transition-normal, 200ms cubic-bezier(0.25, 1, 0.5, 1));
 }
 
-.bg_1 {
+.logo:hover {
+  transform: scale(1.02);
+}
+
+/* Hero Background Slides */
+.bg_1,
+.bg_2,
+.bg_3,
+.bg_4 {
   height: 100vh;
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 170%;
+  background-size: cover;
+  position: relative;
+}
+
+.bg_1::after,
+.bg_2::after,
+.bg_3::after,
+.bg_4::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(61, 43, 31, 0.2) 0%,
+    rgba(61, 43, 31, 0.4) 100%
+  );
+  pointer-events: none;
+}
+
+.bg_1 {
+  background-size: 140%;
 }
 
 .bg_2 {
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-size: 150%;
+  background-size: 130%;
 }
 
 .bg_3 {
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-size: 150%;
+  background-size: 130%;
 }
 
 .bg_4 {
-  height: 100vh;
-  width: 100%;
   background-position: left;
-  background-size: 150%;
+  background-size: 130%;
 }
 
-
+/* Main Navigation Buttons */
 .Main__Buttons {
-  margin: 10px;
-  max-width: 200px;
-  flex-direction: column;
-  flex-flow: center;
+  margin: var(--space-4, 16px);
+  max-width: 220px;
   display: flex;
-  justify-content: space-evenly;
-
+  flex-direction: column;
+  gap: var(--space-3, 12px);
 }
-.Main__Buttons > a {
-  background-color: #e0e0e0;
+
+.Main__Buttons > a,
+.Main__Buttons > button {
+  background-color: rgba(253, 251, 247, 0.95);
+  color: var(--color-primary, #3D2B1F);
+  border: 1px solid var(--color-border-strong, rgba(61, 43, 31, 0.20));
+  padding: var(--space-3, 12px) var(--space-6, 24px);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(61, 43, 31, 0.08);
   text-align: center;
-  line-height: 1.75;
-  border-radius: 4px;
-  letter-spacing: 0.02857em;
+  line-height: 1.5;
+  border-radius: var(--radius-md, 8px);
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  font-size: 0.9375rem;
-}
-.Main__Buttons>button,
-.Main__Buttons>a {
-  color: #00204e;
-  border-color: #00204e;
-  border: 5px solid #00204e;
-  margin: 10px;
-  padding: 10px;
-  font-weight: 850;
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3),
-    0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  font-size: var(--text-sm, 13px);
+  cursor: pointer;
+  transition: all var(--transition-fast, 150ms cubic-bezier(0.25, 1, 0.5, 1));
+  backdrop-filter: blur(8px);
 }
 
-.Main__Buttons>button:hover,
-.Main__Buttons>a:hover {
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5),
-    0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  background-color: #00204e;
-  color: white;
+.Main__Buttons > button:hover,
+.Main__Buttons > a:hover {
+  background-color: var(--color-primary, #3D2B1F);
+  color: var(--color-text-inverse, #FDFBF7);
+  box-shadow: var(--shadow-md, 0 2px 8px rgba(61, 43, 31, 0.08));
+  transform: translateY(-1px);
 }
 
+.Main__Buttons > button:active,
+.Main__Buttons > a:active {
+  transform: translateY(0);
+}
+
+/* Main Panel */
 .Panel__Main {
   height: 100vh;
   min-height: 650px;
@@ -77,53 +106,66 @@
   scroll-snap-align: start;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
+/* Panel Content Box */
 .Panel__Box {
   display: flex;
-  font-family: sans-serif;
+  font-family: var(--font-body, 'Raleway', sans-serif);
   position: absolute;
-  margin-top: 5vh;
-  left: 50;
+  margin-top: 6vh;
   width: auto;
   flex-flow: column;
   align-items: center;
-  padding: 5px;
+  padding: var(--space-6, 24px);
   min-height: 25vh;
-    border-radius: 3px;
+  border-radius: 12px;
+  background: rgba(253, 251, 247, 0.08);
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.Panel__Box {
-  animation: fadein 0.2s;
-}
-
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(8px);
   }
-
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.Panel__Box>h1 {
+.Panel__Box > h1 {
   text-align: center;
   color: white;
+  font-family: var(--font-display, 'Sacramento', cursive);
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0;
 }
 
-
+/* Responsive Adjustments */
 @media only screen and (max-width: 900px) {
-  .bg_1 .bg_2 .bg_3 .bg_4 {
-    background-size: 300%;
+  .bg_1,
+  .bg_2,
+  .bg_3,
+  .bg_4 {
+    background-size: 200%;
     background-repeat: no-repeat;
   }
 }
 
 @media only screen and (max-width: 500px) {
+  .logo {
+    width: 160px;
+  }
+
   .bg_1 {
     height: 100vh;
-    background-size: 150%;
+    background-size: 180%;
     background-position: 50%;
   }
 
@@ -131,20 +173,38 @@
     height: 100vh;
     width: 100%;
     background-position: 50%;
-    background-size: 300%;
+    background-size: 250%;
   }
 
   .bg_3 {
     height: 100vh;
     width: 100%;
     background-position: 30%;
-    background-size: 300%;
+    background-size: 250%;
   }
 
   .bg_4 {
     height: 100vh;
     width: 100vw;
     background-position: center;
-    background-size: 320%;
+    background-size: 280%;
+  }
+
+  .Main__Buttons {
+    max-width: 180px;
+  }
+
+  .Main__Buttons > a,
+  .Main__Buttons > button {
+    padding: var(--space-2, 8px) var(--space-4, 16px);
+    font-size: 12px;
+  }
+
+  .Panel__Box {
+    padding: var(--space-4, 16px);
+  }
+
+  .Panel__Box > h1 {
+    font-size: 2rem;
   }
 }
