@@ -66,14 +66,14 @@ const events = [
     location: "The Way Coffee House",
   },
   {
-    name: "Patchwork & Quilting",
+    name: "Needle & Thread",
     icon: <GiSewingNeedle className="text-4xl text-[#D4A574]" />,
     description:
-      "Whether you're a master tailor, a skilled-seamstress, or you simply wouldn't know the eye from the point; Patchwork & Quilting has something for every level of skill.",
-    dates: "1st & 3rd Monday",
-    frequency: "monthly",
-    startTime: "10:00",
-    endTime: "12:30",
+      "If you enjoy sewing or would like to learn how to sew, then this is the group for you. Take part in patchwork, embroidery, stitcheries, beadwork, toymaking and anything else involving a needle and thread.",
+    dates: "Fortnightly on Mondays",
+    frequency: "fortnightly",
+    startTime: "09:45",
+    endTime: "12:15",
     location: "Christ Church Dunstable's Foyer",
   },
   {
@@ -93,9 +93,9 @@ const events = [
     description:
       "Warm group full of fun, laughter, chatting, and occasionally some knitting gets done. Home to over 40 knitters and crochet-ers ranging from beginner to expert.",
     dates: "Fridays",
-    frequency: "weekly",
-    startTime: "10:00",
-    endTime: "12:00",
+    frequency: "term time",
+    startTime: "09:30",
+    endTime: "11:30",
     location: "Christ Church Dunstable's Foyer",
   },
 ];
