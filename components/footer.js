@@ -24,8 +24,7 @@ export default function Panel() {
               width="100%"
               height="300px"
               frameborder="0"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCWoKnIqMOJ1npXjMd3GXbknzUSLWYga0Q
-    &q=The+Way+Coffee+House"
+              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_MAPS_EMBED_KEY}&q=The+Way+Coffee+House`}
               allowfullscreen
             ></iframe>
           </div>
